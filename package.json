@@ -1,0 +1,12 @@
+{
+  "name": "rhythm-game-020",
+  "version": "1.0.0",
+  "description": "Electron vertical shooter prototype",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^36.0.0"
+  }
+}
