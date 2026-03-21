@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Beat Assault</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="hud-card">
+        <div>
+          <p class="eyebrow">Electron Vertical Shooter</p>
+          <h1>Neon Beat Assault</h1>
+          <p class="subtitle">矢印キー/WASDで移動、Spaceでショット、Shiftで低速移動。30秒を生き残ってボスを撃破！</p>
+        </div>
+        <div class="stats">
+          <div><span>Score</span><strong id="score">0</strong></div>
+          <div><span>Lives</span><strong id="lives">3</strong></div>
+          <div><span>Bomb</span><strong id="bomb">READY</strong></div>
+          <div><span>Boss</span><strong id="boss">--</strong></div>
+        </div>
+      </section>
+      <section class="game-shell">
+        <canvas id="game" width="480" height="720" aria-label="game canvas"></canvas>
+        <div class="overlay" id="overlay">
+          <h2 id="overlay-title">PRESS ENTER</h2>
+          <p id="overlay-message">音ゲーっぽいビートに合わせて押し寄せる敵を捌く、縦スクロールシューティングです。</p>
+          <button id="start-button">ゲーム開始</button>
+        </div>
+      </section>
+      <section class="tips">
+        <h2>How to play</h2>
+        <ul>
+          <li>通常ショットは連射可能。敵弾を避けてコンボを稼ごう。</li>
+          <li>Shiftで集中移動。弾幕を抜ける時に便利です。</li>
+          <li>Bキーのビートボムは画面弾消し＋大ダメージ。チャージ後に再使用できます。</li>
+          <li>30秒経過でボス戦に移行。撃破でゲームクリアです。</li>
+        </ul>
+      </section>
+    </main>
+    <script src="renderer.js"></script>
+  </body>
+</html>
